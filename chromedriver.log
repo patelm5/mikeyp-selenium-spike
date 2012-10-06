@@ -1,0 +1,71 @@
+[0.000][INFO]:      ChromeDriver 23.0.1240.0 C:\chromedriver\chromedriver.exe
+[0.798][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.switches": [  ],
+   "chromeOptions": {
+      "args": [  ],
+      "extensions": [  ]
+   },
+   "platform": "ANY",
+   "version": ""
+}
+
+[0.799][INFO]:      Launching chrome: "C:\Users\Mike\AppData\Local\Google\Chrome\Application\chrome.exe" --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --ignore-certificate-errors about:blank
+[4.174][INFO]:      Connected to Chrome successfully. Version: 22.0.1229.79
+[4.204][FINE]:      Command received (/session/f309e43f21ee4f511a2b931b38c663ba)
+[4.204][FINE]:      Command finished (/session/f309e43f21ee4f511a2b931b38c663ba) with response {
+   "sessionId": "f309e43f21ee4f511a2b931b38c663ba",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "23.0.1240.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "22.0.1229.79",
+      "webStorageEnabled": true
+   }
+}
+
+[4.212][FINE]:      Command received (/session/f309e43f21ee4f511a2b931b38c663ba/timeouts/implicit_wait) with params {
+   "ms": 10000
+}
+
+[4.212][FINER]:     Waiting for all views to stop loading...
+[4.212][FINER]:     Done waiting for all views to stop loading
+[4.213][FINER]:     Waiting for all views to stop loading...
+[4.213][FINER]:     Done waiting for all views to stop loading
+[4.213][FINE]:      Command finished (/session/f309e43f21ee4f511a2b931b38c663ba/timeouts/implicit_wait) with response {
+   "sessionId": "f309e43f21ee4f511a2b931b38c663ba",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[4.218][FINE]:      Command received (/session/f309e43f21ee4f511a2b931b38c663ba/url) with params {
+   "url": "http://www.guardian.co.uk"
+}
+
+[4.230][FINER]:     Waiting for all views to stop loading...
+[4.230][FINER]:     Done waiting for all views to stop loading
+[35.439][FINER]:    Waiting for all views to stop loading...
+[35.442][FINER]:    Done waiting for all views to stop loading
+[35.442][FINE]:     Command finished (/session/f309e43f21ee4f511a2b931b38c663ba/url) with response {
+   "sessionId": "f309e43f21ee4f511a2b931b38c663ba",
+   "status": 0,
+   "value": {
+
+   }
+}
+

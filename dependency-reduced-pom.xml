@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.mikeyp</groupId>
+  <artifactId>selenium-spike</artifactId>
+  <name>Selenium spike</name>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer>
+                  <mainClass>org.mikeyp.Orchestrator</mainClass>
+                </transformer>
+              </transformers>
+              <filters>
+                <filter>
+                  <artifact>*:*</artifact>
+                  <excludes>
+                    <exclude>META-INF/*.SF</exclude>
+                    <exclude>META-INF/*.DSA</exclude>
+                    <exclude>META-INF/*.RSA</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <repositories>
+    <repository>
+      <id>com.springsource.repository.bundles.external</id>
+      <name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
+      <url>http://repository.springsource.com/maven/bundles/external</url>
+    </repository>
+    <repository>
+      <id>com.springsource.repository.bundles.milestone</id>
+      <name>SpringSource Enterprise Bundle Repository - External Bundle Milestones</name>
+      <url>http://repository.springsource.com/maven/bundles/release</url>
+    </repository>
+    <repository>
+      <id>spring-social</id>
+      <name>Spring Social Maven Release Repository</name>
+      <url>http://maven.springframework.org/release</url>
+    </repository>
+    <repository>
+      <id>spring-snapshot</id>
+      <name>Spring Maven Snapshot Repository</name>
+      <url>http://maven.springframework.org/snapshot</url>
+    </repository>
+    <repository>
+      <id>spring-milestone</id>
+      <name>Spring Maven Milestone Repository</name>
+      <url>http://maven.springframework.org/milestone</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>org.springframework.test</artifactId>
+      <version>3.1.1.RELEASE</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <properties>
+    <spring-security.version>3.0.5.RELEASE</spring-security.version>
+    <spring-social-linkedin.version>1.0.1.BUILD-SNAPSHOT</spring-social-linkedin.version>
+    <aspectj.version>1.6.12</aspectj.version>
+    <maven.compiler.target>1.6</maven.compiler.target>
+    <spring-social-twitter.version>1.0.2.RELEASE</spring-social-twitter.version>
+    <spring-social.version>1.1.0.BUILD-SNAPSHOT</spring-social.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring-security-crypto.version>3.1.0.RC3</spring-security-crypto.version>
+    <spring-social-facebook.version>1.0.1.RELEASE</spring-social-facebook.version>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <spring.version>3.1.1.RELEASE</spring.version>
+    <spring-social-github.version>1.0.0.BUILD-SNAPSHOT</spring-social-github.version>
+  </properties>
+</project>
+
